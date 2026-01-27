@@ -219,12 +219,22 @@ footer{
     <h2>Send Inquiry</h2>
 
     <!-- For email, replace action with formspree later -->
-    <form action="#">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea rows="4" placeholder="Your Message"></textarea>
-        <button type="submit">Send Message</button>
-    </form>
+    form -->
+<form
+  action="https://formspree.io/f/meegpvkp"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
 </section>
 
 <footer>
